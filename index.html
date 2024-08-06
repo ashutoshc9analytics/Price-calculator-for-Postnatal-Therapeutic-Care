@@ -77,7 +77,7 @@
             const hours = parseFloat(document.getElementById('hours').value) || 0;
 
             const totalHours = days * hours;
-            const dailyNurseIncentive = Math.min((totalHours * 100), 800);
+            const dailyNurseIncentive = Math.min((hours * 100), 800);
             const totalNurseIncentive = days * dailyNurseIncentive;
             const logisticsCost = days * 400;
             const consumablesCost = days * 100;
